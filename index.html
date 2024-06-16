@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Shout Story </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Island+Moments:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jacques+Francois:wght@400&display=swap" />
+    <link rel="stylesheet" href="./style/principal/style.css" />
+    <script src="javascript/buscadorUm.js" defer></script>
+    
+    <style>
+      /* CSS TESTEEEEEE!! DEPOIS INCLUIR NO LINK DO INDEX.CSS, MAS SÓ DEPOIS DE TESTAR! */
+      /*TESTOU E RESOLVEMOS DEIXAR ASSIM*/
+      /*
+      SURTO COLETIVO ISSO AI:
+
+      .minha-sacola50 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 144px;
+  height: 33px;
+  margin: 11px 0 0 -3px;
+  color: #000000;
+  font-family: Jacques Francois, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26.377px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 1;
+}
+.line50 {
+  position: relative;
+  width: 402px;
+  height: 15.773px;
+  margin: 0.11px 0 0 0;
+  background: url(./assets/images/5dbedb59-6962-4bb1-ab14-b23f8906a854.png)
+    no-repeat center;
+  background-size: cover;
+}
+.cart50 {
+  position: relative;
+  width: 62px;
+  height: 74.344px;
+  margin: 57.113px 0 0 170px;
+  background: url(./assets/images/aa9fc803-d622-435e-a14c-b4a948c7cd0f.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 6;
+}
+.sua-sacola-vazia50 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 196px;
+  height: 26px;
+  margin: 2.656px 0 0 103px;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: Jacques Francois, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 2;
+}
+.add-to-bag50 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 314px;
+  height: 99px;
+  margin: 14px 0 0 44px;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: Jacques Francois, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.464px;
+  text-align: center;
+  z-index: 3;
+}
+.rectangle50 {
+  position: relative;
+  width: 196px;
+  height: 27px;
+  margin: -8px 0 0 103px;
+  cursor: pointer;
+  background: #000000;
+  border: none;
+  z-index: 4;
+  border-radius: 2px;
+}
+.choose-product50 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 170px;
+  height: 18px;
+  top: 5px;
+  left: 13px;
+  color: #ffffff;
+  font-family: Jacques Francois, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 5;
+}
+.or50 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 37px;
+  height: 18px;
+  margin: 19px 0 0 182px;
+  color: #000000;
+  font-family: Jacques Francois, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 7;
+}
+.rectangle-150 {
+  position: relative;
+  width: 196px;
+  height: 27px;
+  margin: 19px 0 0 103px;
+  cursor: pointer;
+  background: #000000;
+  border: none;
+  z-index: 8;
+  border-radius: 2px;
+}
+.ir-para-carrinho50 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 151px;
+  height: 18px;
+  top: 5px;
+  left: 22px;
+  color: #ffffff;
+  font-family: Jacques Francois, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 9;
+}
+
+ pra cima é da janela de sacola*/
+
+      .group {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 5px;
+        width: 300px; 
+        background-color: #fff; 
+      }
+
+      .Input {
+        border: none;
+        outline: none;
+        flex-grow: 1;
+        padding: 5px;
+        font-size: 14px;
+        color: #333; 
+      }
+
+      .Input::placeholder {
+        color: #aaa; 
+      }
+
+      .box {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .pic {
+        width: 16px;
+        height: 16px;
+        background: url('magnifying-glass-icon.png') no-repeat center center; 
+        background-size: contain;
+        margin-right: 5px;
+      }
+
+      .text-2 {
+        font-size: 14px;
+        color: #888;
+      }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="section">
+            <a href="index.html"><span class="text">Shout Store</span></a>
+            <div class="flutuar">
+                
+                <!--Sacola de compras-->
+                <a class="img" href="./paginas/sacola.html">
+                  
+            
+                    <!--
+                  <div class="main-container50">
+                        <span class="minha-sacola50">Minha Sacola</span>
+                        <div class="line50"></div>
+                        <div class="cart50"></div>
+                        <span class="sua-sacola-vazia50">Sua sacola está vazia!</span
+                        ><span class="add-to-bag50"
+                        >Para inserir produtos em sua sacola, basta navegar pela webstore ou
+                        utilizar a busca, e ao encontrar os produtos desejados, clique no botão
+                        'Adicionar à sacola'.</span
+                        ><button class="rectangle50">
+                            <span class="choose-product50">ESCOLHER PRODUTO</span></button
+                        ><span class="or50">- ou -</span
+                        ><button class="rectangle-150">
+                            <span class="ir-para-carrinho50">IR PARA CARRINHO</span>
+                        </button>
+                    </div>
+                   -->
+                
+                  </a> 
+  
+            </div>
+            <div class="img-2"></div>
+            <div class="wrapper">
+                <div class="group">
+                    <input class="Input" type="text" placeholder="Procure aqui!"> <!-- Caixa de busca -->
+                    <div class="box"> <!--Mas o texto acontece aqui-->
+                        <div class="pic"></div>
+                        <div class="wrapper-2">
+                            <span class="text-2">Search</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-2">
+                    <div class="img-3"></div>
+                </div>
+            </div>
+            <a href="./paginas/novidades.html"><span class="text-3">Novidades</span></a>
+            <a href="./paginas/feminino.html"><span class="text-4">Feminino</span></a>
+            <a href="./paginas/masculino.html"><span class="text-5">Masculino</span></a>
+            <a href="./paginas/infantil.html"><span class="text-6">Infantil</span></a>
+            <div class="arrow-down"></div>
+        </div>
+        <div class="line">
+            <div class="line-1">
+                <div class="line-2"></div>
+            </div>
+        </div>
+        <div class="flex-row-fee">
+            <div class="image"></div>
+            <div class="image-3"></div>
+            <div class="image-4"></div>
+            <div class="wrapper-4">
+                <div class="img-7"></div>
+            </div>
+            <div class="pic-6"></div>
+            <div class="wrapper-5">
+                <div class="pic-7"></div>
+            </div>
+            <div class="img-8"></div>
+            <div class="box-3">
+                <div class="img-9"></div>
+            </div>
+        </div>
+        <div class="group-2">
+            <div class="rectangle">
+                <div class="quick-delivery"></div>
+                <span class="free-shipping">FRETE GRÁTIS A PARTIR DE R$ 299,99</span>
+            </div>
+            <button class="rectangle-5">
+                <div class="gift"></div>
+                <span class="first-purchase-discount">15% OFF NA PRIMEIRA COMPRA</span>
+            </button>
+            <button class="rectangle-6">
+                <div class="payment"></div>
+                <span class="installment-without-interest">ATÉ 12x SEM JUROS </span>
+            </button>
+        </div>
+    </div>
+</body>
+</html>

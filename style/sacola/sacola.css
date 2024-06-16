@@ -1,0 +1,176 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container50 {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 802px;
+  height: 880px;
+  margin: 0 auto;
+  font-size: 0px;
+  background: #ffffff;
+  overflow: hidden;
+}
+.minha-sacola {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position:relative;
+  width: 424px;
+  height: 33px;
+  margin: 11px 0 0 -3px;
+  color: #000000;
+  font-family: Jacques Francois, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26.377px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 1;
+}
+.line {
+  position: relative;
+  width: 452px;
+  height: 15.773px;
+  margin: 0.11px 0 0 0;
+  background: url(./assets/images/5dbedb59-6962-4bb1-ab14-b23f8906a854.png)
+    no-repeat center;
+  background-size: cover;
+}
+.cart {
+  position: relative;
+  width: 62px;
+  height: 74.344px;
+  margin: 57.113px 0 0 170px;
+  background: url(./assets/images/aa9fc803-d622-435e-a14c-b4a948c7cd0f.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 6;
+}
+.sua-sacola-vazia {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 196px;
+  height: 26px;
+  margin: 2.656px 0 0 103px;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: Jacques Francois, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 2;
+}
+.add-to-bag {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 314px;
+  height: 99px;
+  margin: 14px 0 0 44px;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: Jacques Francois, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.464px;
+  text-align: center;
+  z-index: 3;
+}
+.rectangle {
+  position: relative;
+  width: 196px;
+  height: 27px;
+  margin: -8px 0 0 103px;
+  cursor: pointer;
+  background: #000000;
+  border: none;
+  z-index: 4;
+  border-radius: 2px;
+}
+.choose-product {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 170px;
+  height: 18px;
+  top: 5px;
+  left: 13px;
+  color: #ffffff;
+  font-family: Jacques Francois, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 5;
+}
+.or {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 37px;
+  height: 18px;
+  margin: 19px 0 0 182px;
+  color: #000000;
+  font-family: Jacques Francois, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 7;
+}
+.rectangle-1 {
+  position: relative;
+  width: 196px;
+  height: 27px;
+  margin: 19px 0 0 103px;
+  cursor: pointer;
+  background: #000000;
+  border: none;
+  z-index: 8;
+  border-radius: 2px;
+}
+.ir-para-carrinho {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 151px;
+  height: 18px;
+  top: 5px;
+  left: 22px;
+  color: #ffffff;
+  font-family: Jacques Francois, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 9;
+}
